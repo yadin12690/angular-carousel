@@ -10,14 +10,18 @@ body {
     width: 20%;
 }
 
+mat-card-image {
+    width: 100%;
+}
+
 .scroll-container {
     display: grid;
     grid-auto-flow: column;
     grid-template-columns: repeat(6, calc(25% - 15px));
-    align-content: start;
     overflow-x: auto;
-    grid-gap: 20px;
-    /* width: 70%; */
+    grid-gap: 1rem;
+    /* width: 70%;
+     align-content: start; */
     height: 70%;
     margin: auto;
 }
@@ -73,7 +77,56 @@ mat-card-subtitle {
         /*height: unset;*/
         height: 59%;
         display: grid;
-        grid-gap: 10px;
+        grid-template-columns: repeat(2, calc(11% - -170px));
+        /*grid-template-rows: minmax(150px, 1fr);*/
+    }
+    .mat-card {
+        /*width: 170px;*/
+        max-width: 74vw;
+        box-sizing: border-box;
+        height: -webkit-fill-available;
+    }
+    .mat-card-header {
+        margin: 0px -65px;
+    }
+    .mat-card-header .mat-card-title {
+        font-size: 15px;
+    }
+}
+
+@media screen and (device-width: 320px) and (device-height: 640px) and (-webkit-device-pixel-ratio: 2) and (orientation: portrait) {
+    #grooLogo {
+        width: 40%;
+    }
+    .scroll-container {
+        /*height: unset;*/
+        height: 59%;
+        display: grid;
+        grid-template-columns: repeat(2, calc(11% - -170px));
+        /*grid-template-rows: minmax(150px, 1fr);*/
+    }
+    .mat-card {
+        /*width: 170px;*/
+        max-width: 74vw;
+        box-sizing: border-box;
+        height: -webkit-fill-available;
+    }
+    .mat-card-header {
+        margin: 0px -65px;
+    }
+    .mat-card-header .mat-card-title {
+        font-size: 15px;
+    }
+}
+
+@media screen and (device-width: 310px) and (device-height: 640px) and (-webkit-device-pixel-ratio: 3) {
+    #grooLogo {
+        width: 40%;
+    }
+    .scroll-container {
+        /*height: unset;*/
+        height: 59%;
+        display: grid;
         grid-template-columns: repeat(2, calc(11% - -170px));
         /*grid-template-rows: minmax(150px, 1fr);*/
     }
