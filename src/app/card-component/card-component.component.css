@@ -60,7 +60,6 @@ mat-card-subtitle {
     overflow: hidden;
     text-overflow: ellipsis;
     margin: 0;
-    resize: horizontal;
 }
 
 
