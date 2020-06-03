@@ -77,13 +77,14 @@ mat-card-subtitle {
         /*height: unset;*/
         height: 59%;
         display: grid;
-        grid-template-columns: repeat(2, calc(11% - -170px));
+        grid-template-columns: repeat(2, calc(11% - -147px));
         /*grid-template-rows: minmax(150px, 1fr);*/
     }
     .mat-card {
         /*width: 170px;*/
         max-width: 74vw;
         box-sizing: border-box;
+        transform: scale(0.8);
         height: -webkit-fill-available;
     }
     .mat-card-header {
@@ -102,13 +103,14 @@ mat-card-subtitle {
         /*height: unset;*/
         height: 59%;
         display: grid;
-        grid-template-columns: repeat(2, calc(11% - -170px));
+        grid-template-columns: repeat(2, calc(11% - -147px));
         /*grid-template-rows: minmax(150px, 1fr);*/
     }
     .mat-card {
         /*width: 170px;*/
         max-width: 74vw;
         box-sizing: border-box;
+        transform: scale(0.8);
         height: -webkit-fill-available;
     }
     .mat-card-header {
@@ -127,13 +129,66 @@ mat-card-subtitle {
         /*height: unset;*/
         height: 59%;
         display: grid;
-        grid-template-columns: repeat(2, calc(11% - -170px));
+        grid-template-columns: repeat(2, calc(11% - -147px));
         /*grid-template-rows: minmax(150px, 1fr);*/
     }
     .mat-card {
         /*width: 170px;*/
         max-width: 74vw;
         box-sizing: border-box;
+        transform: scale(0.8);
+        height: -webkit-fill-available;
+    }
+    .mat-card-header {
+        margin: 0px -65px;
+    }
+    .mat-card-header .mat-card-title {
+        font-size: 15px;
+    }
+}
+
+@media only screen and (max-device-width: 360px) and (-webkit-min-device-pixel-ratio: 2) {
+    #grooLogo {
+        width: 40%;
+    }
+    .scroll-container {
+        /*height: unset;*/
+        height: 59%;
+        display: grid;
+        grid-template-columns: repeat(2, calc(11% - -116px));
+        /*grid-template-rows: minmax(150px, 1fr);*/
+    }
+    .mat-card {
+        /*width: 170px;*/
+        max-width: 74vw;
+        box-sizing: border-box;
+        transform: scale(0.8);
+        height: -webkit-fill-available;
+    }
+    .mat-card-header {
+        margin: 0px -65px;
+    }
+    .mat-card-header .mat-card-title {
+        font-size: 15px;
+    }
+}
+
+@media only screen and (max-device-width: 375px) and (-webkit-min-device-pixel-ratio: 2) {
+    #grooLogo {
+        width: 40%;
+    }
+    .scroll-container {
+        /*height: unset;*/
+        height: 59%;
+        display: grid;
+        grid-template-columns: repeat(2, calc(11% - -125px));
+        /*grid-template-rows: minmax(150px, 1fr);*/
+    }
+    .mat-card {
+        /*width: 170px;*/
+        max-width: 74vw;
+        box-sizing: border-box;
+        transform: scale(0.8);
         height: -webkit-fill-available;
     }
     .mat-card-header {
