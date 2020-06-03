@@ -1,0 +1,28 @@
+<img id="grooLogo" src="https://media.groo.co.il/_media/media/147/234614.png">
+
+<div class="scroll-container">
+    <mat-card *ngFor="let data of dataToDisplay">
+        <mat-card-header>
+            <div mat-card-avatar></div>
+            <mat-card-title>{{ data["g:title"]}}</mat-card-title>
+            <mat-card-subtitle>{{ data["g:description"]}}</mat-card-subtitle>
+            <!--<button mat-stroked-button color="accent">Show More</button>-->
+        </mat-card-header>
+        <img mat-card-image src="{{ data['g:image_link']}}">
+        <mat-card-content>
+            <label>מחיר:</label>
+            <p>{{data["g:price"]}}</p>
+            <ng-container *ngIf="salePrice; then showSale"></ng-container>
+            <ng-template #showSale><label>מחיר הנחה:</label> </ng-template>
+            <p>{{data["g:sale_price"]}}</p>
+        </mat-card-content>
+        <mat-card-actions>
+            <button mat-button color="primary">Like</button>
+            <button mat-button color="primary">Share</button>
+            <div class="flex-spacer"></div>
+            <button mat-icon-button>
+                        <mat-icon>announcement</mat-icon>
+                    </button>
+        </mat-card-actions>
+    </mat-card>
+</div>
